@@ -140,3 +140,93 @@ for (let i=0; i<carsForSale.length; i++){
     console.log(i);
     console.log(carsForSale[i])
  };
+
+ console.log("\n extra homework starts here");
+
+ /* EXTRA 1
+ Write a piece of code for reverting an array.
+ es:
+ [1, 3, 5] ==> [5, 3, 1]
+*/
+
+const normalArr = [
+    0, 1, 2
+];
+
+const reversedOne = normalArr.reverse();
+
+console.log(reversedOne);
+
+/* EXTRA 2
+ Write a piece of code for getting the maximum numerical value from an array.
+*/
+const arr = [3, 5, 8, 100, 20];
+
+const max = Math.max(...arr);
+
+console.log(max);
+
+/* EXTRA 3
+ Write a piece of code for getting the minimum numerical value from an array.
+*/
+
+const min = Math.min(...arr);
+console.log(min);
+
+/* EXTRA 4
+ Write a piece of code for getting only even numerical values from an array.
+*/
+
+const arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const even = arr1.filter(number => {
+  return number % 2 === 0;
+});
+
+console.log(even);
+
+
+/* EXTRA 5
+ Write a piece of code for deleting only even entries from an array.
+*/
+
+const filteredEvenEntries = arr1.filter((element, entries) => {
+    return (entries % 2 === 0);
+  });
+  console.log(filteredEvenEntries);
+
+let result = arr1.filter(function(item){
+    return filteredEvenEntries.indexOf(item) == -1;
+  });
+  
+  console.log(result);
+
+
+/* EXTRA 6
+ Write a piece of code for removing all the vowels from a string.
+*/
+
+const str = "I live in Ireland.";
+const noVowels = str.replace(/[aeiou]/gi, '');
+console.log(noVowels);
+
+/* EXTRA 7
+ Write a piece of code for increasing all the numerical values in a array by 1.
+*/
+
+const newArr = arr1.map(num => num + 1);
+console.log(newArr);
+
+
+/* EXTRA 8 
+ Replace all the strings contained in an array with their length.
+ es.: ["strive", "is", "great"] => [6, 2, 5]
+*/
+const sentence = [
+    "strive", 
+    "is", 
+    "great"
+];
+
+console.log(sentence.map(sentence => sentence.length));
+
