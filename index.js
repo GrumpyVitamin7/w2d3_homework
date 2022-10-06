@@ -118,7 +118,7 @@ console.log(removeTheFirstCar, removeTheLastCar);
  Print to the console the type of the car variable you created before, as well as the types of its licensePlate and brand properties.
 */
 
-console.log(arrayOfCarsForRent);
+console.log(typeof carInfo, typeof carInfo.Model, typeof carInfo.brand, typeof carInfo.licesePlate);
 
 /* EXERCISE 12
  Create a new variable called carsForSale assigning to it an empty array, and then insert 3 cars into it.
